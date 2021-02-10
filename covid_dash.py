@@ -50,8 +50,8 @@ df_top10 = df_total.nlargest( 10 , "Deaths" )
 top10_countries_3 = df_top10[ "Country_Region" ].tolist()
 top10_deaths = df_top10[ "Deaths" ].tolist()
 
-#Trozo de código 4
-fig = make_LO_QUE_TE_DE_LA_GANA(
+Trozo de código 3
+fig = make_subplots(
 rows = 4 , cols = 6 ,
 specs=[
 [{ "type" : "scattergeo" , "rowspan" : 4 , "colspan" : 3 },
@@ -177,4 +177,8 @@ x= 0.35 ,
 y= 0 )
 ]
 )
+<<<<<<< HEAD
 fig.write_html( 'templates/quedivertidoesesteejercicio.html' )
+=======
+fig.write_html( 'templates/dashboard.html' )
+>>>>>>> branch-ticket-3
